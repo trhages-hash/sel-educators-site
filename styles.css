@@ -1,0 +1,71 @@
+
+body{
+  font-family: Inter, Arial, sans-serif;
+  margin: 0;
+  background: #f7f9fc;
+  color: #1f2937;
+}
+
+header.hero{
+  background: linear-gradient(120deg,#e0f2fe,#fef3c7);
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+header.hero h1{
+  margin: 0 0 .5rem;
+  font-weight: 700;
+}
+
+header.hero nav a{
+  text-decoration: none;
+  color: #0f172a;
+  background: #ffffff;
+  padding: .45rem .7rem;
+  border-radius: 999px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+  margin: 0 .2rem;
+  display: inline-block;
+  font-size: .95rem;
+}
+
+main{
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.section{ margin: 2rem 0; }
+
+.card{
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.hstack{
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+}
+
+.icon{ width: 44px; height: 44px; }
+
+h2{ margin: 0; }
+
+.cite{
+  color: #4b5563;
+  font-size: .9rem;
+}
+
+/* Mobile tweaks */
+@media (max-width: 640px){
+  header.hero nav a{ margin: .2rem .1rem; }
+}
